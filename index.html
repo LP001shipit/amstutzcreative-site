@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Amstutz Creative &mdash; Commercial photography &amp; motion</title>
+<meta name="description" content="Commercial photography and motion for home improvement and outdoor brands. Flooring, fixtures and outdoor living through camp, cycling and backcountry. Thousand Oaks, California.">
+<link rel="canonical" href="https://amstutzcreative.co/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Amstutz Creative">
+<meta property="og:description" content="Commercial photography and motion for home improvement and outdoor brands.">
+<meta property="og:url" content="https://amstutzcreative.co/">
+<meta property="og:image" content="https://amstutzcreative.co/assets/img/g00.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap">
+<style>
+
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --w:#ffffff; --pnl:#f2f2f1; --ink:#111111; --mid:#6e6e6b; --rule:#e4e4e2;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --pad:clamp(4px,0.6vw,10px);
+  --gut:var(--pad);
+  --tpad:clamp(18px,3.2vw,44px);
+  --lpad:calc(var(--pad) + 8px);
+  --r:8px;
+  /* accent is OFF. Values kept so terracotta is a one-line switch later:
+     --a-fill:#b0563a; --a-text:#9a4830; --a-wash:#faf0ec; --a-line:#f0ddd5; */
+  --a-fill:#111111; --a-text:#111111; --a-wash:#f2f2f1; --a-line:#e4e4e2;
+}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--ink);overflow-x:hidden;
+  font-family:"Instrument Sans",system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+figure{margin:0}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--a-fill);outline-offset:3px}
+.lbl{font-family:var(--mono);font-size:10px;letter-spacing:.17em;text-transform:uppercase}
+
+/* ---------- nav ---------- */
+.nav{display:flex;align-items:center;gap:14px;padding:13px var(--tpad);height:54px}
+.nav .b{font-size:14.5px;font-weight:500;letter-spacing:-.014em;white-space:nowrap}
+.nav .b em{font-style:normal;color:var(--mid);font-weight:400}
+.nav .cta{margin-left:auto}
+.nav ul a{text-decoration:none;color:var(--mid);font-size:13px;padding:7px 13px;border-radius:100px;display:block}
+.nav ul a:hover{color:var(--ink)}
+.nav ul a.on{background:var(--a-fill);color:#fff}
+.nav .cta{background:var(--a-fill);color:#fff;padding:9px 17px;border-radius:100px;
+  font-size:12.5px;font-weight:500;text-decoration:none;white-space:nowrap}
+.nav .menu{display:none;flex-direction:column;gap:4px;padding:10px;margin-left:auto}
+.nav .menu i{display:block;width:17px;height:1.5px;background:var(--ink);border-radius:2px}
+@media (max-width:820px){.nav .b em{display:none}}
+
+/* ---------- above the fold: the manifest ---------- */
+.manifest{display:grid;gap:var(--gut);padding:0 var(--pad) var(--gut);
+  grid-template-columns:repeat(6,1fr);grid-template-rows:repeat(4,1fr);
+  height:calc(100svh - 54px);min-height:560px}
+.manifest .c{margin:0;border-radius:var(--r);overflow:hidden;background:var(--pnl);position:relative}
+.manifest .c img{width:100%;height:100%;object-fit:cover;
+  transition:transform .9s cubic-bezier(.2,.6,.2,1)}
+.manifest .c:hover img{transform:scale(1.045)}
+.manifest .c figcaption{position:absolute;left:11px;bottom:9px;color:#fff;
+  font-family:var(--mono);font-size:9px;letter-spacing:.15em;text-transform:uppercase;
+  text-shadow:0 1px 9px rgba(0,0,0,.6);opacity:0;transition:opacity .22s}
+.manifest .c:hover figcaption{opacity:1}
+.title{grid-column:1/4;grid-row:1/3;background:#fff;display:flex;flex-direction:column;
+  justify-content:space-between;padding:clamp(14px,1.8vw,26px);border-radius:var(--r)}
+.title .k{color:var(--a-text);margin:0}
+.title h1{margin:0;font-size:clamp(26px,3.5vw,58px);font-weight:500;letter-spacing:-.036em;
+  line-height:.98;max-width:12ch;text-wrap:balance}
+.title .titletop{display:flex;flex-direction:column}
+.title .byline{margin:clamp(10px,1.2vw,18px) 0 0;max-width:34ch;
+  font-size:clamp(13px,1.05vw,15.5px);line-height:1.5;color:var(--mid)}
+.title .foot{display:flex;justify-content:space-between;gap:14px;align-items:flex-end;flex-wrap:wrap}
+.title .foot p{margin:0;font-size:13px;color:var(--mid);line-height:1.6}
+.title .foot .go{font-family:var(--mono);font-size:9.5px;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--a-text);white-space:nowrap}
+.p1{grid-column:4/6;grid-row:1/3}
+.p2{grid-column:6/7;grid-row:1/2}
+.p3{grid-column:6/7;grid-row:2/3}
+.p4{grid-column:1/2;grid-row:3/5}
+.p5{grid-column:2/4;grid-row:3/4}
+.p6{grid-column:2/3;grid-row:4/5}
+.p7{grid-column:3/4;grid-row:4/5}
+.p8{grid-column:4/5;grid-row:3/5}
+.p9{grid-column:5/7;grid-row:3/4}
+.p10{grid-column:5/6;grid-row:4/5}
+.p11{grid-column:6/7;grid-row:4/5}
+@media (max-width:1000px){
+  /* The ratio lives on the IMG, not the grid item: an item that both carries an
+     aspect-ratio and holds a height:100% child sizes circularly and collapses. */
+  .manifest{grid-template-columns:repeat(4,1fr);grid-template-rows:none;grid-auto-rows:auto;
+    height:auto;min-height:0;align-items:start}
+  .manifest .c{aspect-ratio:auto}
+  .manifest .c img{height:auto;aspect-ratio:1/1}
+  .manifest .title{grid-column:1/-1;grid-row:auto;min-height:0}
+  .manifest .p1{grid-column:span 2;grid-row:auto}
+  .manifest .p1 img{aspect-ratio:3/2}
+  .manifest .p2,.manifest .p3,.manifest .p4,.manifest .p5,.manifest .p6,
+  .manifest .p7,.manifest .p8,.manifest .p9{grid-column:auto;grid-row:auto}
+  .manifest .p10,.manifest .p11{display:none}
+}
+@media (max-width:600px){
+  .manifest{grid-template-columns:repeat(2,1fr)}
+  .manifest .title{grid-column:1/-1;
+    padding:clamp(16px,4.5vw,26px) clamp(14px,3.6vw,22px) clamp(18px,5vw,28px)}
+  .manifest .p1{grid-column:1/-1}
+  .manifest .p1 img{aspect-ratio:16/10}
+}
+
+
+/* ---------- copy section ---------- */
+.practice{padding:clamp(38px,6vw,90px) var(--tpad) clamp(38px,6vw,80px);
+  max-width:1360px;margin:0 auto}
+.practice .k{color:var(--mid);margin:0 0 22px}
+.practice h2{margin:0 0 clamp(30px,4vw,54px);font-size:clamp(25px,3.6vw,48px);font-weight:500;
+  letter-spacing:-.03em;line-height:1.12;max-width:32ch;text-wrap:balance}
+.practice .cols{display:grid;grid-template-columns:1fr 1fr;gap:clamp(22px,4vw,70px);
+  max-width:900px;margin-bottom:clamp(38px,5vw,68px)}
+@media (max-width:720px){.practice .cols{grid-template-columns:1fr}}
+.practice .cols p{margin:0;font-size:15.5px;line-height:1.66;color:var(--mid)}
+.practice .cols p+p{margin-top:14px}
+.caps{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+  gap:clamp(20px,3vw,44px);border-top:1px solid var(--rule);padding-top:clamp(24px,3vw,38px)}
+.caps h3{margin:0 0 13px;font-family:var(--mono);font-size:10px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--mid);font-weight:400}
+.caps ul{margin:0;padding:0;list-style:none}
+.caps li{font-size:15px;line-height:1.95;color:var(--ink)}
+.clients{padding:clamp(34px,5vw,76px) var(--tpad) clamp(6px,1vw,14px)}
+.clients .k{color:var(--mid);margin:0 0 16px}
+.clients ul{display:grid;grid-template-columns:repeat(13,1fr);
+  gap:clamp(12px,1.8vw,30px) 0;list-style:none;margin:0;padding:0}
+.clients li{grid-column:span 2;background:none;display:flex;align-items:center;justify-content:center;
+  text-align:center;height:clamp(62px,6.4vw,88px);padding:0 clamp(10px,1.4vw,24px);
+  font-size:clamp(12px,1vw,13.5px);font-weight:500;letter-spacing:-.012em;
+  color:var(--mid);transition:color .18s,opacity .18s;position:relative}
+.clients li:hover{color:var(--ink)}
+.clients li.has img{max-width:calc(60% * var(--s,1));max-height:calc(42% * var(--s,1));
+  width:auto;height:auto;object-fit:contain}
+.clients li.has .cn{display:none}
+.clients li.drag{outline:2px dashed #b9b9b4;outline-offset:2px;border-radius:6px}
+.clients .up{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-size:18px;line-height:1;color:#b5b5b0;background:rgba(255,255,255,.9);
+  opacity:0;transition:opacity .16s;cursor:pointer;border:0;border-radius:6px}
+.clients li:hover .up{opacity:1}
+.clients .rm{position:absolute;top:4px;right:5px;width:18px;height:18px;border-radius:50%;
+  border:0;background:rgba(17,17,17,.7);color:#fff;font-size:12px;line-height:1;cursor:pointer;
+  opacity:0;transition:opacity .16s}
+.clients li:hover .rm{opacity:1}
+.clients__hint{margin:12px 0 0;font-size:12px;color:var(--mid)}
+.clients__bulk{margin-left:10px;border:1px solid var(--rule);background:#fff;border-radius:100px;
+  padding:5px 12px;font-size:11.5px;color:var(--ink);cursor:pointer}
+.clients__bulk:hover{border-color:var(--ink)}
+
+.sectors{margin-top:clamp(28px,4vw,52px);border-top:1px solid var(--rule);padding-top:20px;
+  display:flex;gap:8px;flex-wrap:wrap}
+.sectors span{font-size:13px;padding:7px 14px;border:1px solid var(--rule);border-radius:100px;color:var(--mid)}
+
+/* ---------- mixed motion + stills grid ---------- */
+.gridhead{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
+  padding:0 var(--lpad) 14px;max-width:none}
+.gridhead h2{margin:0;font-size:15px;font-weight:500;letter-spacing:-.012em}
+.gridhead .right{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-left:auto}
+.filters{display:flex;gap:5px;flex-wrap:wrap}
+.filters button{font-size:12.5px;padding:7px 14px;border-radius:100px;border:1px solid var(--rule);color:var(--mid)}
+.filters button:hover{color:var(--ink);border-color:var(--ink)}
+.filters button[aria-pressed="true"]{background:var(--a-wash);border-color:var(--a-line);
+  color:var(--a-text);font-weight:500}
+.gridhead .n{font-family:var(--mono);font-size:10px;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--mid)}
+.mix{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--gut);
+  grid-auto-rows:auto;grid-auto-flow:dense;padding:0 var(--pad) clamp(46px,6vw,84px)}
+@media (max-width:1000px){.mix{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:680px){.mix{grid-template-columns:repeat(2,1fr)}}
+.mix figure{margin:0;border-radius:var(--r);overflow:hidden;background:var(--pnl);position:relative;
+  aspect-ratio:4/5}
+
+.mix figure.v{grid-column:span 2;aspect-ratio:8/5}
+.mix img{width:100%;height:100%;object-fit:cover;transition:transform .85s cubic-bezier(.2,.6,.2,1)}
+.mix figure:hover img{transform:scale(1.04)}
+.mix .play{position:absolute;left:12px;bottom:12px;display:flex;align-items:center;gap:8px;
+  background:var(--a-fill);color:#fff;padding:8px 14px;border-radius:100px;font-size:11.5px;font-weight:500}
+.mix .play::before{content:"";width:0;height:0;border-left:7px solid #fff;
+  border-top:4.5px solid transparent;border-bottom:4.5px solid transparent}
+.mix .dur{position:absolute;right:12px;bottom:14px;font-family:var(--mono);font-size:9.5px;
+  letter-spacing:.14em;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.6)}
+.mix .cap{position:absolute;left:11px;bottom:9px;color:#fff;font-family:var(--mono);
+  font-size:9px;letter-spacing:.15em;text-transform:uppercase;
+  text-shadow:0 1px 9px rgba(0,0,0,.6);opacity:0;transition:opacity .22s}
+.mix figure:hover .cap{opacity:1}
+
+/* ---------- band + footer ---------- */
+.band{margin:0 var(--pad) clamp(40px,5vw,70px);border-radius:16px;background:var(--pnl);
+  padding:clamp(26px,4.4vw,58px);display:flex;justify-content:space-between;
+  align-items:flex-end;gap:26px;flex-wrap:wrap}
+.band h2{margin:0;font-size:clamp(24px,3.6vw,44px);font-weight:500;letter-spacing:-.03em;
+  line-height:1.04;max-width:15ch}
+.band .k{color:var(--a-text);margin:0 0 14px}
+.band a{background:var(--a-fill);color:#fff;padding:14px 26px;border-radius:100px;
+  font-size:13px;font-weight:500;text-decoration:none;white-space:nowrap}
+footer{border-top:1px solid var(--rule);padding:clamp(28px,4vw,52px) var(--tpad) clamp(60px,8vw,100px);
+  display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+footer .big{font-size:clamp(20px,2.6vw,30px);font-weight:500;letter-spacing:-.024em;text-decoration:none}
+footer .cols{display:flex;gap:clamp(24px,5vw,72px);flex-wrap:wrap}
+footer h4{margin:0 0 10px;color:var(--mid);font-family:var(--mono);font-size:9.5px;
+  letter-spacing:.15em;text-transform:uppercase;font-weight:400}
+footer ul{margin:0;padding:0;list-style:none;font-size:13.5px;line-height:2;color:var(--mid)}
+@media (prefers-reduced-motion:reduce){*{transition-duration:.01ms!important}}
+
+
+/* client wall: half-cell brick, stated per breakpoint */
+.clients ul{grid-template-columns:repeat(13,1fr)}
+.clients li:nth-child(1){grid-column:1 / span 2}
+.clients li:nth-child(2){grid-column:3 / span 2}
+.clients li:nth-child(3){grid-column:5 / span 2}
+.clients li:nth-child(4){grid-column:7 / span 2}
+.clients li:nth-child(5){grid-column:9 / span 2}
+.clients li:nth-child(6){grid-column:11 / span 2}
+.clients li:nth-child(7){grid-column:2 / span 2}
+.clients li:nth-child(8){grid-column:4 / span 2}
+.clients li:nth-child(9){grid-column:6 / span 2}
+.clients li:nth-child(10){grid-column:8 / span 2}
+.clients li:nth-child(11){grid-column:10 / span 2}
+.clients li:nth-child(12){grid-column:12 / span 2}
+@media (max-width:1000px){
+  .clients ul{grid-template-columns:repeat(9,1fr)}
+  .clients li:nth-child(1){grid-column:1 / span 2}
+  .clients li:nth-child(2){grid-column:3 / span 2}
+  .clients li:nth-child(3){grid-column:5 / span 2}
+  .clients li:nth-child(4){grid-column:7 / span 2}
+  .clients li:nth-child(5){grid-column:2 / span 2}
+  .clients li:nth-child(6){grid-column:4 / span 2}
+  .clients li:nth-child(7){grid-column:6 / span 2}
+  .clients li:nth-child(8){grid-column:8 / span 2}
+  .clients li:nth-child(9){grid-column:1 / span 2}
+  .clients li:nth-child(10){grid-column:3 / span 2}
+  .clients li:nth-child(11){grid-column:5 / span 2}
+  .clients li:nth-child(12){grid-column:7 / span 2}
+}
+@media (max-width:620px){
+  .clients ul{grid-template-columns:repeat(5,1fr)}
+  .clients li:nth-child(1){grid-column:1 / span 2}
+  .clients li:nth-child(2){grid-column:3 / span 2}
+  .clients li:nth-child(3){grid-column:2 / span 2}
+  .clients li:nth-child(4){grid-column:4 / span 2}
+  .clients li:nth-child(5){grid-column:1 / span 2}
+  .clients li:nth-child(6){grid-column:3 / span 2}
+  .clients li:nth-child(7){grid-column:2 / span 2}
+  .clients li:nth-child(8){grid-column:4 / span 2}
+  .clients li:nth-child(9){grid-column:1 / span 2}
+  .clients li:nth-child(10){grid-column:3 / span 2}
+  .clients li:nth-child(11){grid-column:2 / span 2}
+  .clients li:nth-child(12){grid-column:4 / span 2}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="b">Amstutz Creative <em>/ home &amp; outdoor</em></div>
+  <a class="cta" href="#portal">Client login</a>
+</header>
+
+<section class="manifest" id="top">
+  <div class="title">
+    <div class="titletop">
+      <p class="k lbl">Commercial photography &amp; motion</p>
+      <h1>Both sides of the front door.</h1>
+      <p class="byline">Flooring, fixtures and outdoor living. Camp, cycling and backcountry.</p>
+    </div>
+    <div class="foot">
+      <p>Thousand Oaks, California</p>
+      <span class="go">Scroll &darr;</span>
+    </div>
+  </div>
+    <figure class="c p1"><img src="assets/img/g00.webp" width="900" height="600" alt="Commercial photography by Parker Amstutz" decoding="async"></figure>
+    <figure class="c p2"><img src="assets/img/g01.webp" width="900" height="1350" alt="Commercial photography by Parker Amstutz" decoding="async"></figure>
+    <figure class="c p3"><img src="assets/img/g02.webp" width="900" height="563" alt="Commercial photography by Parker Amstutz" decoding="async"></figure>
+    <figure class="c p4"><img src="assets/img/g03.webp" width="900" height="563" alt="Commercial photography by Parker Amstutz" decoding="async"></figure>
+    <figure class="c p5"><img src="assets/img/g04.webp" width="900" height="600" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class="c p6"><img src="assets/img/g05.webp" width="900" height="600" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class="c p7"><img src="assets/img/g06.webp" width="900" height="563" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class="c p8"><img src="assets/img/g07.webp" width="900" height="601" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class="c p9"><img src="assets/img/g08.webp" width="900" height="600" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class="c p10"><img src="assets/img/g09.webp" width="900" height="600" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class="c p11"><img src="assets/img/g10.webp" width="900" height="1350" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+</section>
+
+<section class="clients" id="clients">
+  <ul id="clientList">
+    <li class="has"><span class="cn">Solo Stove</span><img src="assets/logo/solo-stove.png" alt="Solo Stove" loading="lazy" decoding="async"></li>
+    <li class="has"><span class="cn">ENO</span><img src="assets/logo/eno.png" alt="ENO" loading="lazy" decoding="async"></li>
+    <li class="has"><span class="cn">Lectric eBikes</span><img src="assets/logo/lectric-ebikes.png" alt="Lectric eBikes" loading="lazy" decoding="async"></li>
+    <li><span class="cn">Husky</span></li>
+    <li class="has"><span class="cn">RIDGID</span><img src="assets/logo/ridgid.png" alt="RIDGID" loading="lazy" decoding="async"></li>
+    <li class="has" style="--s:1.05"><span class="cn">Keter</span><img src="assets/logo/keter.png" alt="Keter" loading="lazy" decoding="async"></li>
+    <li class="has"><span class="cn">Bearpaw</span><img src="assets/logo/bearpaw.png" alt="Bearpaw" loading="lazy" decoding="async"></li>
+    <li class="has" style="--s:1.22"><span class="cn">GCI</span><img src="assets/logo/gci.png" alt="GCI" loading="lazy" decoding="async"></li>
+    <li class="has" style="--s:1.18"><span class="cn">SABRE</span><img src="assets/logo/sabre.png" alt="SABRE" loading="lazy" decoding="async"></li>
+    <li class="has" style="--s:1.3"><span class="cn">American Bicycle Group</span><img src="assets/logo/american-bicycle-group.png" alt="American Bicycle Group" loading="lazy" decoding="async"></li>
+    <li class="has" style="--s:1.1"><span class="cn">PROBAR</span><img src="assets/logo/probar.png" alt="PROBAR" loading="lazy" decoding="async"></li>
+    <li class="has"><span class="cn">Aquor</span><img src="assets/logo/aquor.png" alt="Aquor" loading="lazy" decoding="async"></li>
+  </ul>
+</section>
+
+<section class="practice" id="practice">
+  <p class="k lbl">The practice</p>
+  <h2>Both worlds want the same photograph: one that looks lived in.</h2>
+  <div class="cols">
+    <p>Ten years shooting adventure and lifestyle campaigns on location in California. The work now splits between flooring, fixtures and outdoor living, and the camp, cycling and backcountry clients who built the studio.</p>
+    <p>One crew covers both. Same lighting, same casting, same standard for what a real room and a real trailhead look like &mdash; which is why the seam between the two halves never shows in a campaign.</p>
+  </div>
+  <div class="caps">
+    <div><h3>Stills</h3><ul><li>Campaign photography</li><li>Installed product</li><li>Lifestyle libraries</li></ul></div>
+    <div><h3>Motion</h3><ul><li>Brand films</li><li>Social cutdowns</li><li>Aerial &amp; drone</li></ul></div>
+    <div><h3>Direction</h3><ul><li>Creative direction</li><li>Shot architecture</li><li>Casting &amp; location</li></ul></div>
+  </div>
+</section>
+
+<section id="grid">
+  <div class="gridhead">
+    <h2>More work</h2>
+    <div class="right"><span class="n">60 frames</span></div>
+  </div>
+  <div class="mix" id="mix">
+    <figure class="v"><img src="assets/img/w00.webp" width="1400" height="934" alt="Commercial photography by Parker Amstutz" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w01.webp" width="760" height="521" alt="Commercial photography by Parker Amstutz" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w02.webp" width="760" height="507" alt="Commercial photography by Parker Amstutz" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w03.webp" width="760" height="1139" alt="Commercial photography by Parker Amstutz" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w04.webp" width="760" height="507" alt="Commercial photography by Parker Amstutz" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w05.webp" width="760" height="507" alt="Commercial photography by Parker Amstutz" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w06.webp" width="760" height="507" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class="v"><img src="assets/img/w07.webp" width="1000" height="1500" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w08.webp" width="760" height="475" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w09.webp" width="760" height="475" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w10.webp" width="760" height="1139" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w11.webp" width="760" height="507" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w12.webp" width="760" height="507" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w13.webp" width="760" height="507" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class="v"><img src="assets/img/w14.webp" width="1400" height="934" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w15.webp" width="760" height="507" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w16.webp" width="760" height="411" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w17.webp" width="667" height="1000" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w18.webp" width="760" height="475" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w19.webp" width="760" height="507" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w20.webp" width="760" height="507" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class="v"><img src="assets/img/w21.webp" width="900" height="600" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w22.webp" width="760" height="507" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w23.webp" width="760" height="427" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w24.webp" width="760" height="1140" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w25.webp" width="760" height="475" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w26.webp" width="760" height="507" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w27.webp" width="760" height="507" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class="v"><img src="assets/img/w28.webp" width="1400" height="875" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w29.webp" width="760" height="507" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w30.webp" width="760" height="1014" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w31.webp" width="760" height="475" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w32.webp" width="760" height="475" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w33.webp" width="760" height="1140" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w34.webp" width="760" height="507" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class="v"><img src="assets/img/w35.webp" width="1400" height="934" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w36.webp" width="760" height="1140" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w37.webp" width="760" height="475" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w38.webp" width="760" height="1140" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w39.webp" width="760" height="496" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w40.webp" width="760" height="507" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w41.webp" width="760" height="400" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class="v"><img src="assets/img/w42.webp" width="1400" height="752" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w43.webp" width="760" height="507" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w44.webp" width="760" height="507" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w45.webp" width="760" height="347" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w46.webp" width="760" height="570" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w47.webp" width="760" height="475" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w48.webp" width="760" height="507" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class="v"><img src="assets/img/w49.webp" width="1400" height="934" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w50.webp" width="760" height="507" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w51.webp" width="760" height="475" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w52.webp" width="760" height="475" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w53.webp" width="760" height="475" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w54.webp" width="760" height="475" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w55.webp" width="760" height="475" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class="v"><img src="assets/img/w56.webp" width="1400" height="934" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w57.webp" width="760" height="475" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w58.webp" width="760" height="1140" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+    <figure class=""><img src="assets/img/w59.webp" width="760" height="475" alt="Commercial photography by Parker Amstutz" loading="lazy" decoding="async"></figure>
+  </div>
+</section>
+
+<section id="portal" class="band">
+  <div><p class="k lbl">Client delivery</p><h2>Your campaign, delivered like a gallery.</h2></div>
+  <a href="mailto:hello@amstutzcreative.co?subject=Gallery%20access">Client login</a>
+</section>
+
+<footer>
+  <a class="big" href="mailto:hello@amstutzcreative.co">hello@amstutzcreative.co</a>
+  <div class="cols">
+    <div><h4>Services</h4><ul><li>Photography</li><li>Motion</li><li>Creative direction</li></ul></div>
+    <div><h4>Sectors</h4><ul><li>Flooring &amp; surfaces</li><li>Outdoor living</li><li>Camp &amp; cycling</li></ul></div>
+    <div><h4>Studio</h4><ul><li>Thousand Oaks, CA</li><li>Travel-ready</li></ul></div>
+  </div>
+</footer>
+
+</body>
+</html>

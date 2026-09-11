@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /trail/
+Disallow: /login/
+
+Sitemap: https://amstutzcreative.co/sitemap.xml

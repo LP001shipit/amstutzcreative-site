@@ -2,3 +2,7 @@
 _*.html
 _*.jpg
 _*.png
+
+# preview assets live in the amstutz-previews worker, never in git
+assets/work/
+assets/trail/

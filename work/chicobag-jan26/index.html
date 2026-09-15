@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ChicoBag &mdash; January 2026 &mdash; Amstutz Creative</title>
+<meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap">
+<style>
+
+
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --w:#ffffff; --pnl:#f2f2f1; --ink:#111111; --mid:#6e6e6b; --rule:#e4e4e2;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --pad:clamp(4px,0.6vw,10px);
+  --gut:var(--pad);
+  --tpad:clamp(18px,3.2vw,44px);
+  --lpad:calc(var(--pad) + 8px);
+  --r:8px;
+  /* accent is OFF. Values kept so terracotta is a one-line switch later:
+     --a-fill:#b0563a; --a-text:#9a4830; --a-wash:#faf0ec; --a-line:#f0ddd5; */
+  --a-fill:#111111; --a-text:#111111; --a-wash:#f2f2f1; --a-line:#e4e4e2;
+}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--ink);overflow-x:hidden;
+  font-family:"Instrument Sans",system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+figure{margin:0}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--a-fill);outline-offset:3px}
+.lbl{font-family:var(--mono);font-size:10px;letter-spacing:.17em;text-transform:uppercase}
+
+/* ---------- nav ---------- */
+.nav{display:flex;align-items:center;gap:14px;padding:13px var(--tpad);height:54px}
+.nav .b{font-size:14.5px;font-weight:500;letter-spacing:-.014em;white-space:nowrap}
+.nav .b em{font-style:normal;color:var(--mid);font-weight:400}
+.nav .cta{margin-left:auto}
+.nav ul a{text-decoration:none;color:var(--mid);font-size:13px;padding:7px 13px;border-radius:100px;display:block}
+.nav ul a:hover{color:var(--ink)}
+.nav ul a.on{background:var(--a-fill);color:#fff}
+.nav .cta{background:var(--a-fill);color:#fff;padding:9px 17px;border-radius:100px;
+  font-size:12.5px;font-weight:500;text-decoration:none;white-space:nowrap}
+.nav .menu{display:none;flex-direction:column;gap:4px;padding:10px;margin-left:auto}
+.nav .menu i{display:block;width:17px;height:1.5px;background:var(--ink);border-radius:2px}
+@media (max-width:820px){.nav .b em{display:none}}
+
+/* ---------- above the fold: the manifest ---------- */
+.manifest{display:grid;gap:var(--gut);padding:0 var(--pad) var(--gut);
+  grid-template-columns:repeat(6,1fr);grid-template-rows:repeat(4,1fr);
+  height:calc(100svh - 54px);min-height:560px}
+.manifest .c{margin:0;border-radius:var(--r);overflow:hidden;background:var(--pnl);position:relative}
+.manifest .c img{width:100%;height:100%;object-fit:cover;
+  transition:transform .9s cubic-bezier(.2,.6,.2,1)}
+.manifest .c:hover img{transform:scale(1.045)}
+.manifest .c figcaption{position:absolute;left:11px;bottom:9px;color:#fff;
+  font-family:var(--mono);font-size:9px;letter-spacing:.15em;text-transform:uppercase;
+  text-shadow:0 1px 9px rgba(0,0,0,.6);opacity:0;transition:opacity .22s}
+.manifest .c:hover figcaption{opacity:1}
+.title{grid-column:1/4;grid-row:1/3;background:#fff;display:flex;flex-direction:column;
+  justify-content:space-between;padding:clamp(14px,1.8vw,26px);border-radius:var(--r)}
+.title .k{color:var(--a-text);margin:0}
+.title h1{margin:0;font-size:clamp(26px,3.5vw,58px);font-weight:500;letter-spacing:-.036em;
+  line-height:.98;max-width:12ch;text-wrap:balance}
+.title .titletop{display:flex;flex-direction:column}
+.title .byline{margin:clamp(10px,1.2vw,18px) 0 0;max-width:34ch;
+  font-size:clamp(13px,1.05vw,15.5px);line-height:1.5;color:var(--mid)}
+.title .foot{display:flex;justify-content:space-between;gap:14px;align-items:flex-end;flex-wrap:wrap}
+.title .foot p{margin:0;font-size:13px;color:var(--mid);line-height:1.6}
+.title .foot .go{font-family:var(--mono);font-size:9.5px;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--a-text);white-space:nowrap}
+.p1{grid-column:4/6;grid-row:1/3}
+.p2{grid-column:6/7;grid-row:1/2}
+.p3{grid-column:6/7;grid-row:2/3}
+.p4{grid-column:1/2;grid-row:3/5}
+.p5{grid-column:2/4;grid-row:3/4}
+.p6{grid-column:2/3;grid-row:4/5}
+.p7{grid-column:3/4;grid-row:4/5}
+.p8{grid-column:4/5;grid-row:3/5}
+.p9{grid-column:5/7;grid-row:3/4}
+.p10{grid-column:5/6;grid-row:4/5}
+.p11{grid-column:6/7;grid-row:4/5}
+@media (max-width:1000px){
+  /* The ratio lives on the IMG, not the grid item: an item that both carries an
+     aspect-ratio and holds a height:100% child sizes circularly and collapses. */
+  .manifest{grid-template-columns:repeat(4,1fr);grid-template-rows:none;grid-auto-rows:auto;
+    height:auto;min-height:0;align-items:start}
+  .manifest .c{aspect-ratio:auto}
+  .manifest .c img{height:auto;aspect-ratio:1/1}
+  .manifest .title{grid-column:1/-1;grid-row:auto;min-height:0}
+  .manifest .p1{grid-column:span 2;grid-row:auto}
+  .manifest .p1 img{aspect-ratio:3/2}
+  .manifest .p2,.manifest .p3,.manifest .p4,.manifest .p5,.manifest .p6,
+  .manifest .p7,.manifest .p8,.manifest .p9{grid-column:auto;grid-row:auto}
+  .manifest .p10,.manifest .p11{display:none}
+}
+@media (max-width:600px){
+  .manifest{grid-template-columns:repeat(2,1fr)}
+  .manifest .title{grid-column:1/-1;
+    padding:clamp(16px,4.5vw,26px) clamp(14px,3.6vw,22px) clamp(18px,5vw,28px)}
+  .manifest .p1{grid-column:1/-1}
+  .manifest .p1 img{aspect-ratio:16/10}
+}
+
+
+/* ---------- copy section ---------- */
+.practice{padding:clamp(38px,6vw,90px) var(--tpad) clamp(38px,6vw,80px);
+  max-width:1360px;margin:0 auto}
+.practice .k{color:var(--mid);margin:0 0 22px}
+.practice h2{margin:0 0 clamp(30px,4vw,54px);font-size:clamp(25px,3.6vw,48px);font-weight:500;
+  letter-spacing:-.03em;line-height:1.12;max-width:32ch;text-wrap:balance}
+.practice .cols{display:grid;grid-template-columns:1fr 1fr;gap:clamp(22px,4vw,70px);
+  max-width:900px;margin-bottom:clamp(38px,5vw,68px)}
+@media (max-width:720px){.practice .cols{grid-template-columns:1fr}}
+.practice .cols p{margin:0;font-size:15.5px;line-height:1.66;color:var(--mid)}
+.practice .cols p+p{margin-top:14px}
+.caps{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+  gap:clamp(20px,3vw,44px);border-top:1px solid var(--rule);padding-top:clamp(24px,3vw,38px)}
+.caps h3{margin:0 0 13px;font-family:var(--mono);font-size:10px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--mid);font-weight:400}
+.caps ul{margin:0;padding:0;list-style:none}
+.caps li{font-size:15px;line-height:1.95;color:var(--ink)}
+.clients{padding:clamp(34px,5vw,76px) var(--tpad) clamp(6px,1vw,14px)}
+.clients .k{color:var(--mid);margin:0 0 16px}
+.clients ul{display:grid;grid-template-columns:repeat(13,1fr);
+  gap:clamp(12px,1.8vw,30px) 0;list-style:none;margin:0;padding:0}
+.clients li{grid-column:span 2;background:none;display:flex;align-items:center;justify-content:center;
+  text-align:center;height:clamp(62px,6.4vw,88px);padding:0 clamp(10px,1.4vw,24px);
+  font-size:clamp(12px,1vw,13.5px);font-weight:500;letter-spacing:-.012em;
+  color:var(--mid);transition:color .18s,opacity .18s;position:relative}
+.clients li:hover{color:var(--ink)}
+.clients li.has img{max-width:calc(60% * var(--s,1));max-height:calc(42% * var(--s,1));
+  width:auto;height:auto;object-fit:contain}
+.clients li.has .cn{display:none}
+.clients li.drag{outline:2px dashed #b9b9b4;outline-offset:2px;border-radius:6px}
+.clients .up{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-size:18px;line-height:1;color:#b5b5b0;background:rgba(255,255,255,.9);
+  opacity:0;transition:opacity .16s;cursor:pointer;border:0;border-radius:6px}
+.clients li:hover .up{opacity:1}
+.clients .rm{position:absolute;top:4px;right:5px;width:18px;height:18px;border-radius:50%;
+  border:0;background:rgba(17,17,17,.7);color:#fff;font-size:12px;line-height:1;cursor:pointer;
+  opacity:0;transition:opacity .16s}
+.clients li:hover .rm{opacity:1}
+.clients__hint{margin:12px 0 0;font-size:12px;color:var(--mid)}
+.clients__bulk{margin-left:10px;border:1px solid var(--rule);background:#fff;border-radius:100px;
+  padding:5px 12px;font-size:11.5px;color:var(--ink);cursor:pointer}
+.clients__bulk:hover{border-color:var(--ink)}
+
+.sectors{margin-top:clamp(28px,4vw,52px);border-top:1px solid var(--rule);padding-top:20px;
+  display:flex;gap:8px;flex-wrap:wrap}
+.sectors span{font-size:13px;padding:7px 14px;border:1px solid var(--rule);border-radius:100px;color:var(--mid)}
+
+/* ---------- mixed motion + stills grid ---------- */
+.gridhead{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
+  padding:0 var(--lpad) 14px;max-width:none}
+.gridhead h2{margin:0;font-size:15px;font-weight:500;letter-spacing:-.012em}
+.gridhead .right{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-left:auto}
+.filters{display:flex;gap:5px;flex-wrap:wrap}
+.filters button{font-size:12.5px;padding:7px 14px;border-radius:100px;border:1px solid var(--rule);color:var(--mid)}
+.filters button:hover{color:var(--ink);border-color:var(--ink)}
+.filters button[aria-pressed="true"]{background:var(--a-wash);border-color:var(--a-line);
+  color:var(--a-text);font-weight:500}
+.gridhead .n{font-family:var(--mono);font-size:10px;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--mid)}
+.mix{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--gut);
+  grid-auto-rows:auto;grid-auto-flow:dense;padding:0 var(--pad) clamp(46px,6vw,84px)}
+@media (max-width:1000px){.mix{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:680px){.mix{grid-template-columns:repeat(2,1fr)}}
+.mix figure{margin:0;border-radius:var(--r);overflow:hidden;background:var(--pnl);position:relative;
+  aspect-ratio:4/5}
+
+.mix figure.v{grid-column:span 2;aspect-ratio:8/5}
+.mix img{width:100%;height:100%;object-fit:cover;transition:transform .85s cubic-bezier(.2,.6,.2,1)}
+.mix figure:hover img{transform:scale(1.04)}
+.mix .play{position:absolute;left:12px;bottom:12px;display:flex;align-items:center;gap:8px;
+  background:var(--a-fill);color:#fff;padding:8px 14px;border-radius:100px;font-size:11.5px;font-weight:500}
+.mix .play::before{content:"";width:0;height:0;border-left:7px solid #fff;
+  border-top:4.5px solid transparent;border-bottom:4.5px solid transparent}
+.mix .dur{position:absolute;right:12px;bottom:14px;font-family:var(--mono);font-size:9.5px;
+  letter-spacing:.14em;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.6)}
+.mix .cap{position:absolute;left:11px;bottom:9px;color:#fff;font-family:var(--mono);
+  font-size:9px;letter-spacing:.15em;text-transform:uppercase;
+  text-shadow:0 1px 9px rgba(0,0,0,.6);opacity:0;transition:opacity .22s}
+.mix figure:hover .cap{opacity:1}
+
+/* ---------- band + footer ---------- */
+.band{margin:0 var(--pad) clamp(40px,5vw,70px);border-radius:16px;background:var(--pnl);
+  padding:clamp(26px,4.4vw,58px);display:flex;justify-content:space-between;
+  align-items:flex-end;gap:26px;flex-wrap:wrap}
+.band h2{margin:0;font-size:clamp(24px,3.6vw,44px);font-weight:500;letter-spacing:-.03em;
+  line-height:1.04;max-width:15ch}
+.band .k{color:var(--a-text);margin:0 0 14px}
+.band a{background:var(--a-fill);color:#fff;padding:14px 26px;border-radius:100px;
+  font-size:13px;font-weight:500;text-decoration:none;white-space:nowrap}
+footer{border-top:1px solid var(--rule);padding:clamp(28px,4vw,52px) var(--tpad) clamp(60px,8vw,100px);
+  display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+footer .big{font-size:clamp(20px,2.6vw,30px);font-weight:500;letter-spacing:-.024em;text-decoration:none}
+footer .cols{display:flex;gap:clamp(24px,5vw,72px);flex-wrap:wrap}
+footer h4{margin:0 0 10px;color:var(--mid);font-family:var(--mono);font-size:9.5px;
+  letter-spacing:.15em;text-transform:uppercase;font-weight:400}
+footer ul{margin:0;padding:0;list-style:none;font-size:13.5px;line-height:2;color:var(--mid)}
+@media (prefers-reduced-motion:reduce){*{transition-duration:.01ms!important}}
+
+
+/* client wall: half-cell brick, stated per breakpoint */
+.clients ul{grid-template-columns:repeat(13,1fr)}
+.clients li:nth-child(1){grid-column:1 / span 2}
+.clients li:nth-child(2){grid-column:3 / span 2}
+.clients li:nth-child(3){grid-column:5 / span 2}
+.clients li:nth-child(4){grid-column:7 / span 2}
+.clients li:nth-child(5){grid-column:9 / span 2}
+.clients li:nth-child(6){grid-column:11 / span 2}
+.clients li:nth-child(7){grid-column:2 / span 2}
+.clients li:nth-child(8){grid-column:4 / span 2}
+.clients li:nth-child(9){grid-column:6 / span 2}
+.clients li:nth-child(10){grid-column:8 / span 2}
+.clients li:nth-child(11){grid-column:10 / span 2}
+.clients li:nth-child(12){grid-column:12 / span 2}
+@media (max-width:1000px){
+  .clients ul{grid-template-columns:repeat(9,1fr)}
+  .clients li:nth-child(1){grid-column:1 / span 2}
+  .clients li:nth-child(2){grid-column:3 / span 2}
+  .clients li:nth-child(3){grid-column:5 / span 2}
+  .clients li:nth-child(4){grid-column:7 / span 2}
+  .clients li:nth-child(5){grid-column:2 / span 2}
+  .clients li:nth-child(6){grid-column:4 / span 2}
+  .clients li:nth-child(7){grid-column:6 / span 2}
+  .clients li:nth-child(8){grid-column:8 / span 2}
+  .clients li:nth-child(9){grid-column:1 / span 2}
+  .clients li:nth-child(10){grid-column:3 / span 2}
+  .clients li:nth-child(11){grid-column:5 / span 2}
+  .clients li:nth-child(12){grid-column:7 / span 2}
+}
+@media (max-width:620px){
+  .clients ul{grid-template-columns:repeat(5,1fr)}
+  .clients li:nth-child(1){grid-column:1 / span 2}
+  .clients li:nth-child(2){grid-column:3 / span 2}
+  .clients li:nth-child(3){grid-column:2 / span 2}
+  .clients li:nth-child(4){grid-column:4 / span 2}
+  .clients li:nth-child(5){grid-column:1 / span 2}
+  .clients li:nth-child(6){grid-column:3 / span 2}
+  .clients li:nth-child(7){grid-column:2 / span 2}
+  .clients li:nth-child(8){grid-column:4 / span 2}
+  .clients li:nth-child(9){grid-column:1 / span 2}
+  .clients li:nth-child(10){grid-column:3 / span 2}
+  .clients li:nth-child(11){grid-column:2 / span 2}
+  .clients li:nth-child(12){grid-column:4 / span 2}
+}
+
+.proj{padding:clamp(34px,6vw,86px) var(--tpad) clamp(22px,3vw,38px);
+  display:grid;grid-template-columns:1fr auto;gap:20px;align-items:end}
+@media (max-width:760px){.proj{grid-template-columns:1fr;align-items:start}}
+.proj .k{color:var(--mid);margin:0 0 16px}
+.proj h1{margin:0 0 12px;font-size:clamp(30px,5.4vw,68px);font-weight:500;
+  letter-spacing:-.036em;line-height:1.02}
+.proj .dek{margin:0;font-size:clamp(14px,1.15vw,16.5px);line-height:1.55;color:var(--mid);max-width:44ch}
+.proj .side{font-family:var(--mono);font-size:9.5px;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--mid);text-align:right;line-height:2}
+@media (max-width:760px){.proj .side{text-align:left}}
+.seclabel{display:flex;justify-content:space-between;align-items:baseline;gap:16px;
+  padding:clamp(24px,3.4vw,44px) var(--lpad) 14px;font-family:var(--mono);font-size:10px;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--mid)}
+.gal{columns:3;column-gap:var(--gut);padding:0 var(--pad)}
+@media (max-width:1000px){.gal{columns:2}}
+@media (max-width:620px){.gal{columns:1}}
+.gal figure{margin:0 0 var(--gut);break-inside:avoid;border-radius:var(--r);
+  overflow:hidden;background:var(--pnl)}
+.gal img{width:100%;height:auto;display:block}
+.vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gut);padding:0 var(--pad)}
+@media (max-width:1000px){.vgrid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.vgrid{grid-template-columns:1fr}}
+.vgrid figure{margin:0;border-radius:var(--r);overflow:hidden;background:#000}
+.vgrid video{width:100%;height:auto;display:block;background:#000}
+.projfoot{border-top:1px solid var(--rule);margin-top:clamp(34px,5vw,64px);
+  padding:clamp(26px,4vw,48px) var(--tpad) clamp(60px,8vw,100px);
+  display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+.projfoot a{color:var(--ink);font-size:14px}
+.projfoot .note{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--mid)}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="b"><a href="/" style="text-decoration:none;color:inherit">Amstutz Creative <em>/ home &amp; outdoor</em></a></div>
+  <a class="cta" href="/login/">Client login</a>
+</header>
+
+<section class="proj">
+  <div>
+    <p class="k lbl">ChicoBag</p>
+    <h1>January 2026</h1>
+    <p class="dek">Stills and motion delivery.</p>
+  </div>
+  <div class="side">Private preview<br>175 stills &middot; 26 clips<br>Not indexed</div>
+</section>
+
+<div class="seclabel"><span>Stills</span><span>175 frames</span></div>
+<div class="gal">
+    <figure><img src="/assets/work/chicobag-jan26/stills/s001.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 1" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s002.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 2" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s003.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 3" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s004.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 4" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s005.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 5" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s006.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 6" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s007.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 7" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s008.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 8" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s009.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 9" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s010.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 10" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s011.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 11" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s012.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 12" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s013.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 13" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s014.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 14" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s015.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 15" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s016.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 16" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s017.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 17" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s018.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 18" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s019.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 19" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s020.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 20" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s021.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 21" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s022.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 22" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s023.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 23" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s024.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 24" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s025.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 25" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s026.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 26" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s027.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 27" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s028.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 28" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s029.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 29" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s030.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 30" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s031.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 31" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s032.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 32" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s033.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 33" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s034.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 34" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s035.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 35" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s036.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 36" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s037.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 37" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s038.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 38" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s039.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 39" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s040.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 40" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s041.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 41" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s042.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 42" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s043.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 43" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s044.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 44" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s045.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 45" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s046.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 46" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s047.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 47" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s048.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 48" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s049.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 49" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s050.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 50" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s051.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 51" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s052.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 52" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s053.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 53" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s054.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 54" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s055.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 55" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s056.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 56" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s057.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 57" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s058.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 58" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s059.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 59" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s060.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 60" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s061.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 61" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s062.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 62" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s063.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 63" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s064.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 64" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s065.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 65" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s066.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 66" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s067.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 67" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s068.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 68" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s069.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 69" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s070.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 70" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s071.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 71" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s072.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 72" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s073.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 73" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s074.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 74" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s075.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 75" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s076.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 76" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s077.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 77" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s078.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 78" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s079.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 79" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s080.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 80" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s081.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 81" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s082.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 82" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s083.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 83" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s084.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 84" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s085.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 85" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s086.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 86" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s087.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 87" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s088.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 88" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s089.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 89" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s090.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 90" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s091.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 91" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s092.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 92" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s093.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 93" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s094.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 94" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s095.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 95" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s096.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 96" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s097.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 97" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s098.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 98" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s099.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 99" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s100.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 100" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s101.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 101" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s102.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 102" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s103.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 103" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s104.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 104" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s105.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 105" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s106.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 106" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s107.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 107" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s108.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 108" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s109.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 109" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s110.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 110" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s111.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 111" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s112.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 112" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s113.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 113" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s114.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 114" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s115.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 115" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s116.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 116" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s117.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 117" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s118.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 118" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s119.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 119" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s120.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 120" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s121.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 121" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s122.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 122" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s123.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 123" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s124.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 124" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s125.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 125" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s126.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 126" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s127.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 127" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s128.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 128" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s129.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 129" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s130.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 130" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s131.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 131" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s132.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 132" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s133.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 133" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s134.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 134" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s135.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 135" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s136.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 136" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s137.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 137" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s138.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 138" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s139.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 139" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s140.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 140" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s141.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 141" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s142.webp" width="1200" height="775" alt="ChicoBag January 2026, frame 142" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s143.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 143" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s144.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 144" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s145.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 145" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s146.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 146" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s147.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 147" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s148.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 148" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s149.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 149" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s150.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 150" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s151.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 151" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s152.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 152" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s153.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 153" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s154.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 154" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s155.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 155" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s156.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 156" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s157.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 157" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s158.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 158" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s159.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 159" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s160.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 160" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s161.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 161" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s162.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 162" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s163.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 163" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s164.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 164" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s165.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 165" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s166.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 166" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s167.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 167" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s168.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 168" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s169.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 169" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s170.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 170" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s171.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 171" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s172.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 172" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s173.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 173" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s174.webp" width="1200" height="800" alt="ChicoBag January 2026, frame 174" loading="lazy" decoding="async"></figure>
+    <figure><img src="/assets/work/chicobag-jan26/stills/s175.webp" width="800" height="1200" alt="ChicoBag January 2026, frame 175" loading="lazy" decoding="async"></figure>
+</div>
+
+<div class="seclabel"><span>Motion</span><span>26 clips</span></div>
+<div class="vgrid">
+    <figure><video controls preload="none" playsinline poster="/assets/work/chicobag-jan26/video/v0001.webp" width="1200" height="675"><source src="/assets/work/chicobag-jan26/video/v0001.mp4" type="video/mp4"></video></figure>
+    <figure><video controls preload="none" playsinline poster="/assets/work/chicobag-jan26/video/v0002.webp" width="1200" height="675"><source src="/assets/work/chicobag-jan26/video/v0002.mp4" type="video/mp4"></video></figure>
+    <figure><video controls preload="none" playsinline poster="/assets/work/chicobag-jan26/video/v0003.webp" width="1200" height="675"><source src="/assets/work/chicobag-jan26/video/v0003.mp4" type="video/mp4"></video></figure>
+    <figure><video controls preload="none" playsinline poster="/assets/work/chicobag-jan26/video/v0004.webp" width="1200" height="675"><source src="/assets/work/chicobag-jan26/video/v0004.mp4" type="video/mp4"></video></figure>
+    <figure><video controls preload="none" playsinline poster="/assets/work/chicobag-jan26/video/v0005.webp" width="1200" height="675"><source src="/assets/work/chicobag-jan26/video/v0005.mp4" type="video/mp4"></video></figure>
+    <figure><video controls preload="none" playsinline poster="/assets/work/chicobag-jan26/video/v0006.webp" width="1200" height="675"><source src="/assets/work/chicobag-jan26/video/v0006.mp4" type="video/mp4"></video></figure>
+    <figure><video controls preload="none" playsinline poster="/assets/work/chicobag-jan26/video/v0007.webp" width="1200" height="675"><source src="/assets/work/chicobag-jan26/video/v0007.mp4" type="video/mp4"></video></figure>
+    <figure><video controls preload="none" playsinline poster="/assets/work/chicobag-jan26/video/v0008.webp" width="1200" height="675"><source src="/assets/work/chicobag-jan26/video/v0008.mp4" type="video/mp4"></video></figure>
+    <figure><video controls preload="none" playsinline poster="/assets/work/chicobag-jan26/video/v0009.webp" width="1200" height="675"><source src="/assets/work/chicobag-jan26/video/v0009.mp4" type="video/mp4"></video></figure>
+    <figure><video controls preload="none" playsinline poster="/assets/work/chicobag-jan26/video/v0010.webp" width="1200" height="675"><source src="/assets/work/chicobag-jan26/video/v0010.mp4" type="video/mp4"></video></figure>
+    <figure><video controls preload="none" playsinline poster="/assets/work/chicobag-jan26/video/v0011.webp" width="1200" height="675"><source src="/assets/work/chicobag-jan26/video/v0011.mp4" type="video/mp4"></video></figure>
+    <figure><video controls preload="none" playsinline poster="/assets/work/chicobag-jan26/video/v0012.webp" width="1200" height="675"><source src="/assets/work/chicobag-jan26/video/v0012.mp4" type="video/mp4"></video></figure>
+    <figure><video controls preload="none" playsinline poster="/assets/work/chicobag-jan26/video/v0013.webp" width="1200" height="675"><source src="/assets/work/chicobag-jan26/video/v0013.mp4" type="video/mp4"></video></figure>
+    <figure><video controls preload="none" playsinline poster="/assets/work/chicobag-jan26/video/v0014.webp" width="1200" height="675"><source src="/assets/work/chicobag-jan26/video/v0014.mp4" type="video/mp4"></video></figure>
+    <figure><video controls preload="none" playsinline poster="/assets/work/chicobag-jan26/video/v0015.webp" width="1200" height="675"><source src="/assets/work/chicobag-jan26/video/v0015.mp4" type="video/mp4"></video></figure>
+    <figure><video controls preload="none" playsinline poster="/assets/work/chicobag-jan26/video/v0016.webp" width="1200" height="675"><source src="/assets/work/chicobag-jan26/video/v0016.mp4" type="video/mp4"></video></figure>
+    <figure><video controls preload="none" playsinline poster="/assets/work/chicobag-jan26/video/v0017.webp" width="1200" height="675"><source src="/assets/work/chicobag-jan26/video/v0017.mp4" type="video/mp4"></video></figure>
+    <figure><video controls preload="none" playsinline poster="/assets/work/chicobag-jan26/video/v0018.webp" width="1200" height="675"><source src="/assets/work/chicobag-jan26/video/v0018.mp4" type="video/mp4"></video></figure>
+    <figure><video controls preload="none" playsinline poster="/assets/work/chicobag-jan26/video/v0019.webp" width="1200" height="675"><source src="/assets/work/chicobag-jan26/video/v0019.mp4" type="video/mp4"></video></figure>
+    <figure><video controls preload="none" playsinline poster="/assets/work/chicobag-jan26/video/v0020.webp" width="1200" height="675"><source src="/assets/work/chicobag-jan26/video/v0020.mp4" type="video/mp4"></video></figure>
+    <figure><video controls preload="none" playsinline poster="/assets/work/chicobag-jan26/video/v0021.webp" width="1200" height="675"><source src="/assets/work/chicobag-jan26/video/v0021.mp4" type="video/mp4"></video></figure>
+    <figure><video controls preload="none" playsinline poster="/assets/work/chicobag-jan26/video/v0022.webp" width="1200" height="675"><source src="/assets/work/chicobag-jan26/video/v0022.mp4" type="video/mp4"></video></figure>
+    <figure><video controls preload="none" playsinline poster="/assets/work/chicobag-jan26/video/v0023.webp" width="1200" height="675"><source src="/assets/work/chicobag-jan26/video/v0023.mp4" type="video/mp4"></video></figure>
+    <figure><video controls preload="none" playsinline poster="/assets/work/chicobag-jan26/video/v0024.webp" width="1200" height="675"><source src="/assets/work/chicobag-jan26/video/v0024.mp4" type="video/mp4"></video></figure>
+    <figure><video controls preload="none" playsinline poster="/assets/work/chicobag-jan26/video/v0025.webp" width="1200" height="675"><source src="/assets/work/chicobag-jan26/video/v0025.mp4" type="video/mp4"></video></figure>
+    <figure><video controls preload="none" playsinline poster="/assets/work/chicobag-jan26/video/v0026.webp" width="1200" height="675"><source src="/assets/work/chicobag-jan26/video/v0026.mp4" type="video/mp4"></video></figure>
+</div>
+
+<div class="projfoot">
+  <a href="/">&larr; Back to the work</a>
+  <span class="note">Shared privately &middot; please don&rsquo;t redistribute</span>
+</div>
+
+</body>
+</html>
